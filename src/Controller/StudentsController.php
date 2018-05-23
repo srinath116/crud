@@ -9,9 +9,9 @@ class StudentsController extends AppController
     
     public function index()
     {
-        $students = $this->Students->find('all');
+        
 
-        $this->set(compact('students'));
+        $this->set('students',$this->Students->find('all'));
     }
 
     
