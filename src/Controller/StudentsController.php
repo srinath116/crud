@@ -9,7 +9,7 @@ class StudentsController extends AppController
     
     public function index()
     {
-        $students = $this->paginate($this->Students);
+        $students = $this->Students->find('all);
 
         $this->set(compact('students'));
     }
